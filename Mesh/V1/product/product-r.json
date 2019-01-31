@@ -1,0 +1,23 @@
+{
+  "meshName": "shopmesh",
+  
+  "virtualRouterName": "product-vr",
+
+  "routeName": "product-r",
+
+  "spec": {
+    "httpRoute": {
+      "action": {
+        "weightedTargets": [
+          {
+            "virtualNode": "product-vn",
+            "weight": 100
+          }
+        ]
+      },
+      "match": {
+        "prefix": "/"
+      }
+    }
+  }
+}

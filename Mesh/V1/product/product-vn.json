@@ -1,0 +1,23 @@
+{
+  "meshName": "shopmesh",
+
+  "virtualNodeName": "product-vn",
+
+  "spec": {
+    "listeners": [
+      {
+        "portMapping": {
+          "port": 5000,
+          "protocol": "http"
+        }
+      }
+    ],
+
+    "serviceDiscovery": {
+      "dns": {
+        "serviceName": "product.default.svc.cluster.local"
+      }
+      
+    }
+  }
+}

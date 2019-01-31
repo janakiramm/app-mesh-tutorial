@@ -1,0 +1,11 @@
+{
+  "meshName": "shopmesh",
+
+  "virtualRouterName": "order-vr",
+
+  "spec": {
+    "serviceNames": [
+      "order.default.svc.cluster.local"
+    ]
+  }  
+}

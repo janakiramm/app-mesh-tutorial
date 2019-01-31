@@ -1,0 +1,29 @@
+{
+  "meshName": "shopmesh",
+
+  "virtualNodeName": "order-vn",
+
+  "spec": {
+
+    "backends": [
+      "product.default.svc.cluster.local",
+      "customer.default.svc.cluster.local"
+    ],
+    
+    "listeners": [
+      {
+        "portMapping": {
+          "port": 5000,
+          "protocol": "http"
+        }
+      }
+    ],
+
+    "serviceDiscovery": {
+      "dns": {
+        "serviceName": "order.default.svc.cluster.local"
+      }
+      
+    }
+  }
+}
